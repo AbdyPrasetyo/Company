@@ -1,6 +1,12 @@
-Thanks for downloading this template!
+Project Ini merupakan Tugas Akhir Mata Kuliah Metode Numerik 
 
-Template Name: Company
+
+
+
+
+
+
+
 Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
