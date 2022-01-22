@@ -39,16 +39,25 @@ session_destroy(); ?>
                     function kesimpulan($jumlah_persamaan)
                     {
                         global $kof;
-                        echo 'Sehingga: ';
+                         echo '<h2><center> Jumlah Proses Produksi:</h2>';
                         for ($i = 0; $i < $jumlah_persamaan; $i++) {
-                            echo '<br>X<sub>' . $i . '</sub>: ';
-                            for ($j = 0; $j < $jumlah_persamaan + 1; $j++) {
-                                if ($j == $jumlah_persamaan) {
-                                    echo $kof[$i][$j];
+                                $panjang = $i + 1;
+                                echo'<h4><center> Jumlah Proses Produksi Sebanyak  ' . $panjang . ':';
+
+                                for ($j = 0; $j < $jumlah_persamaan + 1; $j++) {
+                                    if ($j == $jumlah_persamaan) {
+                                        $jumlah = $kof[$i][$j];
+                                            echo '' . $jumlah . ' kali dari sisa kedelay </h2>';
+                                     }
                                 }
-                            }
+                             }
                         }
-                    }
+                        echo '<h2> Note. </h2>';
+                        echo '<h4><ol><li>Proses Produk si 1 untuk tempe biasa</li>
+                                      <li>Proses Produk si 2 untuk tempe gambus</li>
+                                      <li>Proses Produk keterangan selanjutnya menyesuaikan kebutuhan anda, karena disini jumlah persamaan yang kami analisis hanya 2.</li>
+                                            </h4>';
+                    
 
                     function buatArray($jumlah_persamaan)
                     {
