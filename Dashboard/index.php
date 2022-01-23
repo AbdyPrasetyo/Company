@@ -1,3 +1,9 @@
+<?php session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: pages-login.php");
+    exit;
+}
+?>
 <?php include('Template_Backend/header.php'); ?>
 <?php include('Template_Backend/sidebar.php'); ?>
 <main id="main" class="main">
